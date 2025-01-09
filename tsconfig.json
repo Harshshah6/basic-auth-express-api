@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "ES6", // Target ECMAScript 6
+        "module": "commonjs", // CommonJS module system
+        "moduleResolution": "node", // Resolves modules similar to Node.js
+        "esModuleInterop": true, // Enables importing non-ES modules
+        "skipLibCheck": true, // Skips type checking of declaration files
+        "strict": true, // Enables strict mode (helps catch errors)
+        "forceConsistentCasingInFileNames": true, // Ensures consistent casing in filenames
+        "outDir": "./dist", // Output directory for compiled JavaScript
+        "baseUrl": ".", // Base directory for module resolution
+        "paths": {
+            "@/*": [
+                "src/*"
+            ] // Path alias for easy imports (optional)
+        }
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules" // Excludes node_modules directory
+    ]
+}
