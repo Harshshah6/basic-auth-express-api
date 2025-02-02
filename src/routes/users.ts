@@ -21,7 +21,7 @@ router.post('/', async (req, res):Promise<any> => {
     }
 });
 
-// Get all users (for example)
+// Get all users
 router.get('/', async (req, res) => {
     try {
         const users = await User.find({});
